@@ -1,0 +1,136 @@
+aside {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+aside > .bar {
+    text-align: center;
+    padding-top: 1.35em;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-bottom: 1.1em;
+    background-color: var(--Blue);
+    color: white;
+    font-size: 0.96em;
+    line-height: 1.65;
+    border-radius: 0.7em;
+    margin-bottom: 1.6em;
+    box-shadow: 0 8px 0px 0px hsla(0, 61%, 63%, 0.6);
+}
+aside > .bar > span {
+    font-weight: 600;
+}
+
+form {
+    background-color: white;
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border-radius: 0.5em;
+    box-shadow: 0 8px 0px 0px hsla(0, 61%, 63%, 0.6);
+}
+
+.input {
+    position: relative;
+}
+.input > img {
+    position: absolute;
+    right: 1.8em;
+    top: 1em;
+}
+.input > i {
+    position: absolute;
+    font-size: 0.1em;
+    transform: scale(0.9);
+    top: 38em;
+    right: -4em;
+    color: var(--Red);
+    font-weight: 600;
+}
+.input.error {
+    margin-bottom: 1.4em;
+}
+.input.error > input {
+    color: var(--Red);
+    border: 2px solid var(--Red);
+}
+
+input {
+    height: 3.81em;
+    /* padding-top: 1.2em; */
+    width: 100%;
+    padding-left: 1.17em;
+    font-size: 0.91em;
+    /* letter-spacing: 0.02em; */
+    margin-bottom: 1.12em;
+    font-weight: 600;
+    font-family: "Poppins";
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: 0;
+    border: 2px solid hsl(251, 18%, 56%);
+}
+
+button {
+    width: 100%;
+    padding-top: 1.4em;
+    padding-bottom: 0.9em;
+    background-color: var(--Green);
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.96em;
+    font-weight: 500;
+    border-radius: 0.4em;
+    margin-bottom: 0.6em;
+    box-shadow: 0 4px 0 0 hsl(154, 59%, 46%)
+}
+
+.tos {
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 12px;
+    transform: scale(0.92);
+    padding-bottom: 1.9em;
+    line-height: 1.9;
+    color: var(--Grayish-Blue);
+    font-weight: 500;
+}
+
+.tos > span {
+    color: var(--Red);
+    font-weight: 600;
+}
+
+@media (min-width: 960px) {
+    aside {
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        margin-bottom: auto;
+        flex: 1;
+        padding-left: 2em;
+        padding-right: 1.4em;
+
+    }
+    aside > .bar {
+        margin-bottom: 1.5em;
+    }
+    form {
+        padding-top: 2.4em;
+        padding-left: 2.5em;
+        padding-right: 2.4em;
+        padding-bottom: 1.1em;
+    }
+    input {
+        margin-bottom: 1.43em;
+        padding-left: 2.1em;
+    }
+    button {
+        margin-bottom: 0.9em;
+    }
+}
